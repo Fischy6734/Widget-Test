@@ -1,0 +1,29 @@
+
+<style>
+  .widget-container {
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #121212;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container" id="widget"></div>
+
+<script>
+  function embedHTML(htmlCode) {
+    document.getElementById('widget').innerHTML = htmlCode;
+  }
+
+  // Example usage
+  const exampleHTML = `
+    <h1>Embedded HTML</h1>
+    <p>This is an example of embedded HTML content.</p>
+  `;
+  embedHTML(exampleHTML);
+</script>
+</body>
+</html>
